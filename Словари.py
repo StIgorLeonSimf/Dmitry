@@ -52,4 +52,17 @@ print()
 
 ls = [22, 33, 44, 22]
 dd = dict.fromkeys(ls, 'my object')
+# dd = dict.fromkeys(ls, ['my object'])
+dd = {i: [] for i in ls}
+dd[22].append(100)
+
+dd = {k: k ** 2 for k in range(10, 20)}
 print(dd)
+dd = {}
+for k in range(10, 20):
+    dd[k] = k ** 2
+print(dd)
+
+ls = [(1, 11), (2, 22), ('yes', 'it is')]
+d = dict(ls)
+print(d)
