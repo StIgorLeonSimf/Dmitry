@@ -38,11 +38,11 @@ res = list(map(lambda n, m: n > m, ls, ls1))
 def prompt(x, y):
     print(f'X = {x}')
     print(f'Y = {y}')
-    print(f'Result = {str(x) + str(y)}')
-    return str(x) + str(y)
+    print(f'Result = {str(y) + str(x)}')
+    return str(y) + str(x)
 
 city = ['У', 'ф', 'а', '-', 4, 5]
 
-res = reduce(lambda x, y: str(x) + str(y), city)
+# res = reduce(lambda x, y: str(x) + str(y), city)
 res = reduce(prompt, city)
 print(res)
